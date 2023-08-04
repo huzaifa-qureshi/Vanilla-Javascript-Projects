@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>counter app</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+      <nav class="navigation-bar">
+        <div class="left-nav">
+          <button data-pop-up-target="#pop-up" id="set-start-btn">Set Start Count </button> 
+        </div>
+        <div class="middle-nav"> 
+          <button id="save-btn">Save Count</button>
+        </div>
+        <div class="left-nav"> 
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </nav>
+      <!--Set Start count popup window-->
+      <div class="pop-up" id="pop-up">
+        <div class="pop-up-header">
+          <div class="pop-up-title">
+            Set Start Count
+          </div>
+          <button data-close-button class="pop-up-cross">
+            &times;
+          </button>
+        </div>
+        <div class="pop-up-body">
+          <input type="number" class="set-count-start-input" id="start-input" value="0">
+          <button class="check-mark" id="check-mark"> &#10003;</button>
+        </div>  
+      </div>
+      <div id="overlay"> </div>
+      <h1>Counter:</h1>
+      <h2 id="count-el">0</h2>
+      <button id="increment-btn">COUNT</button>
+      <p id="save-el">Count History: </p>
+      <script src="index.js"> </script>
+  </body>
+</html>

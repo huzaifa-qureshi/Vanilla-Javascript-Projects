@@ -1,0 +1,93 @@
+.text{
+  color: blueviolet;
+  font-size: 30px;
+  font-weight: bold;
+}
+.back-button{
+  border: 5px;
+  border-color: rgb(0, 0, 0); 
+  background-color: grey;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 6px;
+  padding-left: 8px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.back-button:hover{
+  padding-left: 13px;
+  padding-right: 13px;
+}
+.next-button{
+  border: 5px;
+  border-color: rgb(0,0,0);
+  background-color: grey;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-top: 6px;
+  padding-left: 8px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.next-button:hover{
+  padding-left: 13px;
+  padding-right: 13px;
+}
+a{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.shadow-button{
+  background-color: green;
+  padding-top: 6px;
+  padding-left: 8px;
+  padding-bottom: 6px;
+  padding-right: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 3px;
+  transition: box-shadow 0.15s;
+}
+.shadow-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.shadow-button:active{
+  margin-left: 8px;
+  margin-top: 8px;
+  box-shadow: none;
+}
+.title{
+  font-family: Arial;
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.USD{
+  font-size: 12px;
+  color: grey;
+}
+.rate{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: green;
+  font-size: 10px;
+  font-family: Arial;
+}
+.description{
+  margin-top: 4px;
+  color: grey;
+  font-family: Arial;
+  font-size: 10px;
+}
+.red-text{
+  color: red;
+}

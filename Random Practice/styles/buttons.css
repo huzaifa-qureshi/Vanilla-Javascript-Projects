@@ -1,0 +1,121 @@
+.subscribe-button {
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 4px;
+  margin-left: 4px;
+  transition: opacity 0.15s;
+  vertical-align: top;
+}
+.subscribe-button:hover {
+  opacity: 0.8;
+}
+.subscribe-button:active {
+  opacity: 0.5;
+}  
+
+.join-button{
+  background-color: white;
+  color: rgb(21, 110, 139);
+  border-color: rgb(21, 110, 139);
+  border-style: solid;
+  border-width: 1px;
+  height: 36px;
+  width: 62px;
+  border-radius: 2px;
+  padding-top: 9.5px;
+  padding-bottom: 9.5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+  transition: background-color 0.15s, color 0.15s;
+  vertical-align: top;
+}
+.join-button:hover{
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
+.join-button:active{
+  opacity: 0.7;
+}
+
+.tweet-button{
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  font-size: 15;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+  transition: box-shadow 0.15s;
+  vertical-align: top;
+}
+.tweet-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.tweet-button:active{
+  background-color: white;
+  color: rgb(29, 155, 240);
+  border: 5px;
+  border-color: rgb(29, 155, 240);
+}
+
+.sign-up-button{
+  background-color: rgb(46, 164, 79);
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+  transition: box-shadow 0.15s, opacity 0.15s;
+  vertical-align: top;
+}
+.sign-up-button:hover{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.sign-up-button:active{
+  opacity: 0.8;
+}
+
+.amazon-button{
+  background-color: rgb(255,216,20);
+  border: none;
+  font-size: 15px;
+  border-radius: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+  transition: opacity 0.15s, background-color 0.15s;
+}
+.amazon-button:hover {
+  background-color: rgb(238, 201, 16) ;
+}
+.amazon-button:active{
+  opacity: 0.7;
+}

@@ -1,0 +1,248 @@
+*,*::after, *::before{
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-body-bg: rgb(29, 29, 29);
+  --clr-button-text: rgb(29, 29, 29);
+  --clr-card-bg: black ;
+  --clr-text: white;
+  --clr-heading: rgb(200, 64, 64);
+  --clr-button: rgb(200, 64, 64);
+  --clr-shadow: rgb(87, 32, 32);
+  --clr-shadow-overlay: rgb(57, 21, 21);
+}
+
+:root:has(input:checked){
+  --clr-body-bg: #B1B2FF;
+  --clr-button-text: rgb(29, 29, 29);
+  --clr-card-bg: #B1B2FF ;
+  --clr-text: rgb(29, 29, 29);
+  --clr-button: #AAC4FF;
+  --clr-heading: rgb(29, 29, 29);
+  --clr-shadow: #4f5b76;
+  --clr-shadow-overlay: #222631;
+}
+
+body{
+  background-color: var(--clr-body-bg);
+  color: var(--clr-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+div{
+  margin: 0;
+  font-size: 30px;
+}
+
+h1{
+  font-size: 50px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: var(--clr-heading);
+}
+
+h2{
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+#save-el{
+  margin-top: 30px;
+}
+button{
+  border: none;
+}
+
+#increment-btn{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 170px;
+  height: 170px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: var(--clr-button);
+  color: var(--clr-button-text);
+  border-radius: 50%;
+  transition: 0.15s ease-out;
+  box-shadow: 0px 6px 0px 3px var(--clr-shadow)
+}
+
+#increment-btn:active{
+  transform: translateY(4px);
+  box-shadow: 0px 2px 0px 3px var(--clr-shadow-overlay);
+}
+
+.navigation-bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 0.25px;
+  border-bottom-style: solid;
+  border-color: grey;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.left-nav{
+  margin-right: 50px ;
+  flex: 1;
+}
+
+.middle-nav{
+  flex: 1;
+  margin-right: 25px;
+}
+
+#save-btn, #set-start-btn{
+  width: 350px;
+  min-width: 10%;
+  background-color: var(--clr-body-bg);
+  color: var(--clr-text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border-radius: 5%;
+}
+
+#save-btn:active, #set-start-btn:active{
+  opacity: 0.9;
+}
+
+.right-nav{
+  flex: 1;
+}
+
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  min-width: 10%;
+  height: 40px;
+  margin: 0px 10px;
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  border-radius: 30px;
+  background-color: var(--clr-heading);
+  transition: 0.4s;
+}
+
+.switch input {display: none;}
+
+.slider::before{
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  min-width: 10%;
+  left: 5px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+input:checked + .slider{
+  background-color: var(--clr-heading);
+}
+
+input:checked + .slider::before{
+  transform: translateX(40px);
+}
+
+.pop-up{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid var(--clr-text);
+  border-radius: 14px;
+  z-index: 10;
+  background-color:var(--clr-body-bg);
+  width: 1fr; 
+  max-width: 80%;
+}
+
+.pop-up.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.pop-up-header{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-text);
+}
+
+.pop-up-title{
+  font-size: 1.5rem;
+  font-weight: bold;  
+}
+
+.pop-up-cross{
+  color: var(--clr-text);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: var(--clr-body-bg);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pop-up-body{
+  padding: 20px 30px;
+  display: flex;
+  align-content: center;
+}
+
+.set-count-start-input{
+  max-width: 86%;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  padding-left: 20px;
+  background-color: lightgray;
+}
+
+.check-mark{
+  align-content: center;
+  font-size: 2rem;
+  padding-top: 0px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  background-color: lightgray;
+}
+.check-mark:active{
+  opacity: 0.8;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
